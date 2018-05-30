@@ -11,7 +11,7 @@ class Part(models.Model):
 
     name = models.CharField(max_length=40, verbose_name='Название')
     cost = models.FloatField(verbose_name='Цена')
-    pic = models.ImageField(max_length=100, verbose_name='Картинка')
+    pic = models.ImageField(max_length=100, verbose_name='Картинка', upload_to='parts/')
 
     def __str__(self):
         return self.name
