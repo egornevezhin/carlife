@@ -16,6 +16,9 @@ class Master(models.Model):
     phone = models.CharField(validators=[phone_regex], max_length=17, blank=True, verbose_name='Телефон')
     work = models.CharField(max_length=20, verbose_name='Область работы')
 
+    def __str__(self):
+        return self.name
+
 
 class Service(models.Model):
 
@@ -27,3 +30,5 @@ class Service(models.Model):
     cost = models.FloatField(verbose_name='Цена')
     person = models.ForeignKey(Master, on_delete=models.CASCADE, verbose_name='Работник')
 
+    def __str__(self):
+        return self.name

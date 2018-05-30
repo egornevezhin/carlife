@@ -1,6 +1,8 @@
 from django.db import models
 
 # Create your models here.
+
+
 class Part(models.Model):
 
     class Meta:
@@ -10,3 +12,6 @@ class Part(models.Model):
     name = models.CharField(max_length=40, verbose_name='Название')
     cost = models.FloatField(verbose_name='Цена')
     pic = models.ImageField(max_length=100, verbose_name='Картинка')
+
+    def __str__(self):
+        return self.name
