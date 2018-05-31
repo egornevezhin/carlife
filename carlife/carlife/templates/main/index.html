@@ -1,4 +1,61 @@
 {% extends 'base.html' %}
 
 {% block page %}
+
+		<section id="container">
+			<div class="wrap-container">
+				<div id="main-content">
+					<div class="wrap-content zerogrid">
+						<div class="row">
+							<div class="col-1-2">
+								<a href="index.html"></a>
+							</div>
+							<div class="col-1-2">
+								<form id="form-container" action="" class="f-right">
+									<!--<input type="submit" id="searchsubmit" value="" />-->
+									<a class="search-submit-button" href="javascript:void(0)">
+										<i class="fa fa-search"></i>
+									</a>
+									<div id="searchtext">
+										<input type="text" id="s" name="s" placeholder="Поиск...">
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="crumbs">
+							<ul>
+								<li><a href="index.html">Домой</a></li>
+								<li><a href="gallery.html">О нас</a></li>
+							</ul>
+						</div>
+						<article>
+							<div class="art-header">
+								<h1 class="entry-title">Приветствуем вас на нашем сайте!</h1>
+							</div>
+							<div class="art-content">
+
+								<div class="information_about"><p>Здесь будет информация о том, чем занимается компания.</p></div>
+								<p>Тут еще немножечко инфы.</p>
+								<h2>Первый заголовок</h2>
+								<p>Мы работаем уже n-ое количество лет.</p>
+								<h2>Заголовок второй</h2>
+								<p>Нам доверяют. Мы выполняем работу ответственно.</p>
+								<p>Заберем, отремонтируем и привезем.</p>
+								<div class="note"><p>Наш сервис предоставляет следующие виды работ:</p>
+								  <ol>
+									<li>Слесарные</li>
+									<li>Кузовные</li>
+									<li>Малярные</li>
+								  </ol>
+								  <div class="clear"></div>
+								</div>
+								<blockquote><p>Работаем для вас! За качество отвечаем.</p></blockquote>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
 {% endblock %}
