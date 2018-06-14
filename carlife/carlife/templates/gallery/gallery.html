@@ -1,4 +1,25 @@
 {% extends 'base.html' %}
-
 {% block page %}
+{% load staticfiles %}
+      		<div class="zerogrid">
+      			<div class="row">
+      				<div class="col-1-3">
+						<img src="{% static 'images/photo_1.jpg' %}" width="170" height="150" />
+					</div>
+					<div class="col-1-3">
+						<img src="{% static 'images/photo_2.jpg' %}" width="170" height="150" />
+					</div>
+					<div class="col-1-3">
+						<img src="{% static 'images/photo_3.jpg' %}" width="170" height="150" />
+					</div>
+				</div>
+						<p>
+				<div class="row">
+						<img src="{% static 'images/photo_4.jpg' %}" width="267" height="267" />
+						<img src="{% static 'images/photo_5.jpg' %}" width="170" height="150" />
+						<img src="{% static 'images/photo_6.jpg' %}" width="170" height="150" />
+					</div>
+				</p>
+			</div>
+
 {% endblock %}
