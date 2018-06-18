@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'sellparts.apps.SellpartsConfig',
     'services.apps.ServicesConfig',
+    'sorl.thumbnail',
+    'django_instagram',
 ]
 
 MIDDLEWARE = [
