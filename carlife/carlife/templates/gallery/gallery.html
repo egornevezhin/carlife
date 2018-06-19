@@ -3,17 +3,28 @@
 {% load staticfiles %}
 {% load instagram_client %}
 
-<h1>Instagram Feed</h1>
+<section>
+	<h1>Наша галерея</h1>
+</section>
+<div class="line">
+</div>
+</br>
+
+
 <div id="django_recent_media_wall">
-    {% instagram_user_recent_media имя_пользователя %}
-    {% for media in recent_media %}
-        <div class="django_instagram_media_box_item">
-            <a href="//instagram.com/p/{{ media.shortcode }}" target="_blank">
-                <img src="{{ media.thumbnail_src }}"/>
-                <span>{{ media.edge_media_to_caption.edges.0.node.text }}</span>
-            </a>
-        </div>
+	{% instagram_user_recent_media carlifepiter %}
+	<div class="zerogrid">
+		{% for media in recent_media %}
+				<div class="row">
+					<div class="django_instagram_media_box_item">
+						<div class="col-1-3" align="center">
+							<img src="{{ media.thumbnail_src }}" width="250" height="250"/>
+							</br>
+							</br>
+						</div>
+
     {% endfor %}
+	</div>
 </div>
 
       		<!--<div class="zerogrid">-->
