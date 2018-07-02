@@ -9,7 +9,7 @@ class MasterAdmin(admin.ModelAdmin):
 
 
 class ServiceAdmin(admin.ModelAdmin):
-    list_display = ('name', 'cost')
+    list_display = ('name', 'cost_1', 'cost_2', 'cost_3')
 
 
 admin.site.register(Master, MasterAdmin)
