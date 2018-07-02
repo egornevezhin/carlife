@@ -25,6 +25,7 @@ urlpatterns = [
     path('services/', include('services.urls')),
     path('gallery/', include('gallery.urls')),
     path('about/', include('about.urls')),
+    path('check/', include('check.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += staticfiles_urlpatterns()

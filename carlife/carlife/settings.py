@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'sellparts.apps.SellpartsConfig',
     'services.apps.ServicesConfig',
+    'check.apps.CheckConfig',
     'sorl.thumbnail',
     'django_instagram',
 ]
@@ -117,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru-ru'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
