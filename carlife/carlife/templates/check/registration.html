@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block page %}
+{% if status == 'ok' %}
+  <p> Ваша заявка успешно зарегистрирована. Вам скоро перезвонят.</p>
+  <p> Ваш номер заказа {{ id }}.</p>
+{% else %}
+  <form method="POST" class="post-form">
+    {% csrf_token %}
+
+    {% for field in form.visible_fields %}
+    <p>{{ field.label }} {{ field }} {{ field.errors }} </p>
+    {% endfor %}
+    <button type="submit" class="save btn btn-default">Записаться</button>
+  </form>
+{% endif %}
+{% endblock %}

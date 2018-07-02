@@ -18,6 +18,9 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls import url
+
+from check import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,6 +29,7 @@ urlpatterns = [
     path('gallery/', include('gallery.urls')),
     path('about/', include('about.urls')),
     path('check/', include('check.urls')),
+    url('registration', views.registration, name='registration'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += staticfiles_urlpatterns()
