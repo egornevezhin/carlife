@@ -32,7 +32,7 @@ html { -webkit-text-size-adjust: none;}
 .video embed,.video object,.video iframe { width: 100%;  height: auto;}
 img{max-width:100%;	height: auto;width: auto\9; /* ie8 */}
 
-a{color: #4C4C4C;text-decoration: none;}
+a{color: #000000;text-decoration: none;}
 a:hover {opacity: 0.9; text-decoration: none;}
 
 h1, h2 	{font-size: 25px;line-height: 30px;}
@@ -56,7 +56,9 @@ p{margin: 10px 0;}
 
 
 /* --Line-- */
-.line{border-bottom: 3px solid #ddd;width: 100%;margin: 20px 0 0;}
+.line{border-bottom: 2px solid #b7b7b7;width: 100%;margin: 20px 0 0;}
+.brd{border: 10px solid #e8ca20; padding: 0px;}
+.brd-tab{border: 2px solid #c4c4c4; padding: 0px;}
 /* ---------------------------------------------------------------------------- */
 /* ------------------------------------Html-Body------------------------------- */
 /* ---------------------------------------------------------------------------- */
@@ -73,7 +75,7 @@ header{text-align: center;}
 /* -------------------------------------Container------------------------------ */
 /* ---------------------------------------------------------------------------- */
 #container {}
-#container .wrap-container{background: #B5B5B5;padding: 20px;}
+#container .wrap-container{background: #d1d1d1;padding: 20px;}
 
 /* ---content-box--- */
 .content-box {}
@@ -308,7 +310,7 @@ a.button:hover{background-color: #fff;color: #222;border: 1px solid #ccc;}
 /* -------------------------------------Search--------------------------------- */
 /* ---------------------------------------------------------------------------- */
 #searchtext input {
-	background: none repeat scroll 0 0 #fff;
+	background: none repeat scroll 0 0 #FFFFFF;
 	
 	color: #5e5e5e;
 	display: block;

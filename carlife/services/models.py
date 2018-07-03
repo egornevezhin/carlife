@@ -27,9 +27,9 @@ class Service(models.Model):
         verbose_name_plural = 'Услуги'
 
     name = models.CharField(max_length=40, verbose_name='Название')
-    cost_1 = models.FloatField(verbose_name='Легковые (A, B, C)', null=True)
-    cost_2 = models.FloatField(verbose_name='Легковые (D, E, F)', null=True)
-    cost_3 = models.FloatField(verbose_name='Джипы и минивены', null=True)
+    cost_1 = models.CharField(max_length=10, verbose_name='Легковые (A, B, C)', null=True)
+    cost_2 = models.CharField(max_length=10, verbose_name='Легковые (D, E, F)', null=True)
+    cost_3 = models.CharField(max_length=10, verbose_name='Джипы и минивены', null=True)
     person = models.ForeignKey(Master, on_delete=models.CASCADE, verbose_name='Работник')
 
     def __str__(self):

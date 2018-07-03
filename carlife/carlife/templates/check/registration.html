@@ -9,9 +9,11 @@
     {% csrf_token %}
 
     {% for field in form.visible_fields %}
-    <p>{{ field.label }} {{ field }} {{ field.errors }} </p>
+    <p><b>{{ field.label }}</b> {{ field }} {{ field.errors }} </p>
     {% endfor %}
     <button type="submit" class="save btn btn-default">Записаться</button>
   </form>
 {% endif %}
+
+
 {% endblock %}

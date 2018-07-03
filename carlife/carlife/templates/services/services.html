@@ -1,51 +1,59 @@
 {% extends 'base.html' %}
-
 {% block page %}
 <section>
-		<h1 class="entry-title">Прайс-лист</h1>
+		<h1 class="entry-title" align="center">Прайс-лист</h1>
 </section>
-	<div class="line">
-	</div>
+<div class="line">
+</div>
+<div class="brd-tab">
 <section id="container">
 			<div class="wrap-container">
 				<div class="wrap-content zerogrid">
 					<div class="row">
 						<div class="col-1-4">
-							<h3>Наименование</h3>
+							<h2>Наименование</h2>
 						</div>
 						<div class="col-1-4">
-							<h3>Легковые (A,B,C)</h3>
+							<h2>Легковые (A,B,C)</h2>
 						</div>
 						<div class="col-1-4">
-							<h3>Легковые (D,E,F(S))</h3>
+							<h2>Легковые (D,E,F(S))</h2>
 						</div>
 						<div class="col-1-4">
-							<h3>Джипы и минивены</h3>
+							<h2>Джипы и минивены</h2>
 						</div>
 					</div>
 				</div>	
 			</div>
 	</section>
+</div>
 {% for service in services %}
+<div class="brd-tab">
 <section id="container">
 			<div class="wrap-container">
 				<div class="wrap-content zerogrid">
 					<div class="row">
 						<div class="col-1-4">
-							{{service.name}}
+							<b>{{service.name}}</b>
 						</div>
 						<div class="col-1-4">
-							{{service.cost_1}}
+							{{service.cost_1}} &#x20bd
 						</div>
 						<div class="col-1-4">
-							{{service.cost_2}}
+							{{service.cost_2}} &#x20bd
 						</div>
 						<div class="col-1-4">
-							{{service.cost_3}}
+							{{service.cost_3}} &#x20bd
 						</div>
 					</div>
 				</div>	
 			</div>
 	</section>
+</div>
 {% endfor %}
+<div class="line">
+</div>
+<p><b>Для уточнения информации звоните по телефону:</b>
+	<a href="tel:+79052019229">+7(905)201-92-29</a>
+</p>
 {% endblock %}
