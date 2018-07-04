@@ -75,7 +75,7 @@ header{text-align: center;position: relative;}
 /* -------------------------------------Container------------------------------ */
 /* ---------------------------------------------------------------------------- */
 #container {position: relative;}
-#container .wrap-container{background: #d1d1d1;padding: 15px;position: relative; margin-top: 40px}
+#container .wrap-container{background: #d1d1d1;padding: 15px;position: relative;}
 
 /* ---content-box--- */
 .content-box {}
@@ -375,5 +375,5 @@ a.search-submit-button {
 /* --------------------------------Google-Map---------------------------------- */
 /* ---------------------------------------------------------------------------- */
 .maps iframe{
-    pointer-events: none;
+    pointer-events: none; width: 50%;
 }
