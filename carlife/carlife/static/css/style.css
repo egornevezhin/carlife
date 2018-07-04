@@ -64,18 +64,18 @@ p{margin: 10px 0;}
 /* ---------------------------------------------------------------------------- */
 html, body {width:100%; padding:0; margin:0;}
 body {font: 14px/25px Arial, Helvetica, sans-serif;font-family: 'Open Sans', sans-serif;background:#000000;padding:0 40px ;}
-body .wrap-body{}
+body .wrap-body{position: absolute;}
 
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Header--------------------------------- */
 /* ---------------------------------------------------------------------------- */
-header{text-align: center;position: absolute; top 0; z-index:1000;}
+header{text-align: center;}
 
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Container------------------------------ */
 /* ---------------------------------------------------------------------------- */
 #container {}
-#container .wrap-container{background: #d1d1d1;padding: 15px;}
+#container .wrap-container{background: #d1d1d1;padding: 15px;position: relative;}
 
 /* ---content-box--- */
 .content-box {}
