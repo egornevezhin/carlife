@@ -1,3 +1,5 @@
+
+
 """
 Django settings for carlife project.
 
@@ -30,7 +32,7 @@ SECRET_KEY = '622at27!0*5l0n&9!=n4@ig+w(w-746^u%l$o0%&pmpwv6)hq#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['139.59.71.114']
 
 MEDIA_ROOT = rel_project('carlife/public/media')
 MEDIA_URL = '/public/media/'
@@ -89,7 +91,7 @@ WSGI_APPLICATION = 'carlife.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': '/home/server_admin/carlife/carlife/db.sqlite3',
     }
 }
 
