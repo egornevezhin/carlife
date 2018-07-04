@@ -75,7 +75,7 @@ header{text-align: center;}
 /* -------------------------------------Container------------------------------ */
 /* ---------------------------------------------------------------------------- */
 #container {}
-#container .wrap-container{background: #d1d1d1;padding: 20px;}
+#container .wrap-container{background: #d1d1d1;padding: 15px;}
 
 /* ---content-box--- */
 .content-box {}
