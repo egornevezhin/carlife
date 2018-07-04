@@ -69,17 +69,17 @@ body .wrap-body{}
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Header--------------------------------- */
 /* ---------------------------------------------------------------------------- */
-header{text-align: center;position: relative;}
+header{text-align: center;}
 
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Container------------------------------ */
 /* ---------------------------------------------------------------------------- */
-#container {position: relative;}
-#container .wrap-container{background: #d1d1d1;padding: 15px;position: relative;}
+#container {}
+#container .wrap-container{background: #d1d1d1;padding: 15px;}
 
 /* ---content-box--- */
 .content-box {}
-.content-box .wrap-box {padding: 10px;}
+.content-box .wrap-box {padding: 10px;position: relative;}
 .content-box .header {margin-bottom: 20px;}
 .content-box .header h2{font-size: 35px; margin: 0; line-height: 45px;}
 .content-box .header .wrapper{ display: inline-block;}
