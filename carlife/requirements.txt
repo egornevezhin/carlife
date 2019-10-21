@@ -8,5 +8,5 @@ Pillow==5.1.0
 pytz==2018.4
 requests==2.19.1
 sorl-thumbnail==12.4.1
-urllib3==1.23
+urllib3==1.24.2
 wincertstore==0.2
